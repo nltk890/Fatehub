@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Zap, TrendingUp, Clock, Trophy, ArrowUpRight, ArrowDownLeft, CheckCircle } from 'lucide-react'
 import { useAuthStore } from '@/stores/authStore'
-import { api, type UserProfile, type Transaction } from '@/lib/api'
+import { api, type Transaction } from '@/lib/api'
 import { useNavigate } from 'react-router-dom'
 import { WorkerBanner } from '@/components/WorkerBanner'
 

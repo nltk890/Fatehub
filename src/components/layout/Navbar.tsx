@@ -5,7 +5,6 @@ import {
   Trophy, Shield, LogOut, Zap, Menu, X
 } from 'lucide-react'
 import { useAuthStore } from '@/stores/authStore'
-import { api } from '@/lib/api'
 
 const NAV_ITEMS = [
   { to: '/dashboard',   label: 'Dashboard',   icon: LayoutDashboard },
@@ -90,7 +89,7 @@ export function Navbar() {
               padding: '4px 12px',
             }}>
               <Zap size={12} color="#F7931A" fill="#F7931A" />
-              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.75rem', font_weight: 500, color: '#F7931A' }}>
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.75rem', fontWeight: 500, color: '#F7931A' }}>
                 {profile.points.toLocaleString()} pts
               </span>
             </div>

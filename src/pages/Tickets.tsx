@@ -244,7 +244,7 @@ export function Tickets() {
             {(!showMobileList && selected) ? 'Conversation' : 'Your '} <span className="gradient-text">Tickets</span>
           </h1>
           <div style={{ display:'flex', alignItems:'center', gap:12 }}>
-            <div style={{ display:'none', md: 'flex', alignItems:'center', gap:6 }} className="live-badge">
+            <div style={{ display:'none', alignItems:'center', gap:6 }} className="live-badge-md">
               <Wifi size={12} color="#22c55e" />
               <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'0.65rem', color:'#22c55e', letterSpacing:'0.05em' }}>
                 LIVE
@@ -260,7 +260,6 @@ export function Tickets() {
       <div className="tickets-layout" style={{ 
         display:'grid', 
         gridTemplateColumns: 'minmax(0, 1fr)',
-        md: '280px 1fr', 
         gap:16, 
         height:'calc(100vh - 280px)', 
         minHeight:400 

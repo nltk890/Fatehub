@@ -1,4 +1,4 @@
-import { AlertCircle, ExternalLink } from 'lucide-react'
+import { AlertCircle } from 'lucide-react'
 
 interface Props {
   error: string
