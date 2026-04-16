@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'frontend/**'
+      - '**'
       - '.github/workflows/deploy.yml'
 
 permissions:
@@ -29,7 +29,6 @@ jobs:
           VITE_API_URL: ${{ secrets.VITE_API_URL }}
           VITE_ADMIN_UID: ${{ secrets.VITE_ADMIN_UID }}
           VITE_FIREBASE_PROJECT_ID: ${{ secrets.VITE_FIREBASE_PROJECT_ID }}
-          VITE_dev: "dev"
         run: |
           npm install
           npm run build
