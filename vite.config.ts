@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   // Set base to '/fatehub/' for GitHub Pages deployment
   // For local dev without the base path, set to '/'
-  base: '/fatehub/',
+  base: '/Fatehub/',
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
